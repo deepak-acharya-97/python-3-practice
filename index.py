@@ -11,7 +11,7 @@ def changeMadu():
     print(place)
 
 changeMadu()
-print(place)
+print(changeMadu.__doc__)
 
 ## NonLocal Scope (Ensclosing Scope) - scope which is not local/global
 
