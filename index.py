@@ -3,6 +3,7 @@
 place="Hebri"
 
 def changeMadu():
+    global place ## Global Scope
     place="Hanglur"
     print(place)
 
