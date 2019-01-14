@@ -7,7 +7,7 @@ def changeMadu():
     Checking Local/Global Scope
     """
     global place ## Global Scope
-    place="Hanglur"
+    place="Hiriyadka"
     print(place)
 
 changeMadu()
