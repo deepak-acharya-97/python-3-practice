@@ -13,3 +13,15 @@ def changeMadu():
 changeMadu()
 print(place)
 
+## NonLocal Scope (Ensclosing Scope) - scope which is not local/global
+
+def valueFriendShip():
+    valueFG=True
+    def valueItBasedOnRegion():
+        valueFR=False
+        nonlocal valueFG ## Keyword for accessing non local. Otherwise this will be local scope
+        valueFG=False ## changing nonlocal variable
+    valueItBasedOnRegion()
+    print(valueFG)
+
+valueFriendShip()
