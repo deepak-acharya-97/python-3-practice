@@ -13,3 +13,5 @@ uselessFriend1=UselessFriend('AAA',23,"Hanglur",8)
 uselessFriend2=UselessFriend('BBB',22,"Koteshwara",8.1)
 for friend in UselessFriend.Friends: ## Not Accessible as it's private
     print(friend)
+
+print(2<3)
