@@ -68,3 +68,28 @@ print(uselessFriend4)
 # Place :Hiriyadka
 # Rating:***** (5.5)
 # **************************************************
+
+
+## Ternary Operators
+## [on_true] if [expression] else [on_false]
+
+marks=70
+grade="P" if marks>19 else "F"
+print(grade) ## Output P
+
+## NITK Grading System (Relative Grading)
+grade10=95
+grade9=84
+grade8=70
+grade7=60
+grade6=45
+grade5=30
+grade4=19 ## else fail
+
+grade="AA" if marks>=grade10 else "AB" if marks>=grade9 else "BB" if marks>=grade8 else "BC" if marks>=grade7 else "CC" if marks>=grade6 else\
+"CD" if marks>=grade5 else "DD" if marks>=grade4 else "FF"
+print(grade)
+
+marks=19
+grade=("F","P")[marks>19]
+print(grade)
