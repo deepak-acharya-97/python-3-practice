@@ -33,4 +33,38 @@ uselessFriend3=UselessFriend('AAA',None,"Hiriyadka",5.5)
 for friend in UselessFriend.Friends: ## Not Accessible as it's private
     print(friend)
 uselessFriend4=uselessFriend1+uselessFriend3
+print("\nUpdated\n")
 print(uselessFriend4)
+
+
+# E:\PLAYGROUND\python3>python oo.py
+# **************************************************
+# Name  :AAA
+# Age   :23
+# Place :Hanglur
+# Rating:******** (8)
+# **************************************************
+
+# **************************************************
+# Name  :BBB
+# Age   :22
+# Place :Koteshwara
+# Rating:******** (8.1)
+# **************************************************
+
+# **************************************************
+# Name  :AAA
+# Age   :None
+# Place :Hiriyadka
+# Rating:***** (5.5)
+# **************************************************
+
+
+# Updated
+
+# **************************************************
+# Name  :AAA
+# Age   :23
+# Place :Hiriyadka
+# Rating:***** (5.5)
+# **************************************************
