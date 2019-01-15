@@ -15,10 +15,9 @@ class UselessFriend:
             self.age=other.age if other.age else self.age
             self.place=other.place if other.place else self.place
             self.rating=(self.rating,other.rating)[self.rating]
-            return self
         except:
             print("Not Adding Two Objects as the Names aren't Equal")
-            return self
+        return self
 uselessFriend1=UselessFriend('AAA',23,"Hanglur",8)
 uselessFriend2=UselessFriend('BBB',22,"Koteshwara",8.1)
 for friend in UselessFriend.Friends: ## Not Accessible as it's private
