@@ -14,7 +14,7 @@ class UselessFriend:
             assert self.name==other.name, "Name should be equal"
             self.age=other.age if other.age else self.age
             self.place=other.place if other.place else self.place
-            self.rating=(self.rating,other.rating)[self.rating]
+            self.rating=other.rating if other.rating else self.rating
         except:
             print("Not Adding Two Objects as the Names aren't Equal")
         return self
@@ -29,6 +29,8 @@ class UselessFriend:
         return result
 uselessFriend1=UselessFriend('AAA',23,"Hanglur",8)
 uselessFriend2=UselessFriend('BBB',22,"Koteshwara",8.1)
+uselessFriend3=UselessFriend('AAA',None,"Hiriyadka",5.5)
 for friend in UselessFriend.Friends: ## Not Accessible as it's private
     print(friend)
-uselessFriend3=uselessFriend1+uselessFriend2
+uselessFriend4=uselessFriend1+uselessFriend3
+print(uselessFriend4)
