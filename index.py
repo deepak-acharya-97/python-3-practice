@@ -1,27 +1,6 @@
-## Local Scope
+def result(mark):
+    return mark > 40
 
-place="Hebri"
-
-def changeMadu():
-    """
-    Checking Local/Global Scope
-    """
-    global place ## Global Scope
-    place="Hiriyadka"
-    print(place)
-
-changeMadu()
-print(changeMadu.__doc__)
-
-## NonLocal Scope (Ensclosing Scope) - scope which is not local/global
-
-def valueFriendShip():
-    valueFG=True
-    def valueItBasedOnRegion():
-        valueFR=False
-        nonlocal valueFG ## Keyword for accessing non local. Otherwise this will be local scope
-        valueFG=False ## changing nonlocal variable
-    valueItBasedOnRegion()
-    print(valueFG)
-
-valueFriendShip()
+result_14IT201=all(result(m) for m in [41,42,51,30,33])
+result_14IT201_dash=any(result(m) for m in [41,42,51,30,33])
+print(result_14IT201,result_14IT201_dash)
